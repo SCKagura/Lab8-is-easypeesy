@@ -4,16 +4,14 @@ using namespace std;
 char before(char x){
 	char result ;
 	if (x<64 or x>90 ){
-		result='0' ;
-	}else{if(x!='A'){
+		cout<<"0" ;
+	}else{
 		result=x-1;
-	
-	}
+	return result;
 	 }
 	if(x=='A'){
-		result= 'Z' ;
+		return 'Z' ;
 	}
-	return result;
 }
 
 
@@ -24,13 +22,8 @@ char before(char x){
 
 
 
-
-
-
-
-
 int main(){
-	cout << before('Z') << "\n"; }
+	cout << before('A') << "\n"; }
 	/*Test Case
 	cout << before('A') << "\n";
 	cout << before('B') << "\n";
